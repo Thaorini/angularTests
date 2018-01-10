@@ -2,9 +2,16 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+  <button (click)="myEvent($event)">Push me</button>
+  `,
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'app';
+
+  export class AppComponent {
+    title = 'app';
+    myEvent(event){
+      console.log(event);
+    }
+
 }
