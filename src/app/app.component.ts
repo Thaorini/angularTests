@@ -12,6 +12,8 @@ import { Component } from '@angular/core';
     title = 'app';
     myEvent(event){
       console.log(event);
+      console.log('Hello!');
+      //HEROREAOfjeiojguorjweg
     }
 
 }
